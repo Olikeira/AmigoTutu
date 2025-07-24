@@ -1,6 +1,8 @@
 # Amigo Tutu - Aplicativo de Comunicação Aumentativa
 
-![Image](https://github.com/user-attachments/assets/9fcc3d24-501b-4b83-a061-c098c4424282)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9fcc3d24-501b-4b83-a061-c098c4424282" alt="Ícone do Amigo Tutu" width="150">
+</p>
 
 ## Sobre o Projeto
 
@@ -8,7 +10,7 @@ O **Amigo Tutu** é um aplicativo Android nativo, desenvolvido com o propósito 
 
 Utilizando um sistema baseado em pictogramas (símbolos e imagens), o aplicativo permite que a criança construa frases e comunique suas necessidades, sentimentos e desejos, promovendo maior autonomia e inclusão social.
 
-Este projeto nasceu no ambiente acadêmico da **UNISAGRADO** e tem o orgulho de ter participado na fase de uso e avaliação pela [**Sorri Bauru**](https://www.sorribauru.com.br/), uma instituição de referência na reabilitação e inclusão de pessoas com deficiência.
+Este projeto nasceu no ambiente acadêmico da **UNISAGRADO** e tem o orgulho de contar com a colaboração da [**Sorri Bauru**](https://www.sorribauru.com.br/) nas fases de avaliação e testes de usabilidade.
 
 ## Funcionalidades Principais
 
@@ -17,10 +19,38 @@ Este projeto nasceu no ambiente acadêmico da **UNISAGRADO** e tem o orgulho de 
 * **Interface Amigável:** Design totalmente pensado para o público infantil, com ícones grandes, feedback visual e ausência de textos complexos.
 * **Ferramenta de Inclusão:** Visa dar voz e autonomia à criança, facilitando sua interação com a família, terapeutas e amigos no dia a dia.
 
-## Demonstração Visual
-![Image](https://github.com/user-attachments/assets/23878eee-40ef-40ff-ba9b-c6424f145680)
+## 📥 Download e Instalação
 
-![Image](https://github.com/user-attachments/assets/00e4c126-ee73-457b-a477-efed06a1aecc)   ![Image](https://github.com/user-attachments/assets/c5275cf3-7f22-4b70-898e-7a9529bb05c4)
+Você pode baixar a versão mais recente do aplicativo (APK) diretamente pela página de Releases do projeto aqui no GitHub.
+
+<p align="center">
+  <a href="https://github.com/Olikeira/AmigoTutu/releases/tag/v1.0.0" target="_blank">
+    <img src="https://img.shields.io/badge/Baixar APK-v1.0.0-brightgreen?style=for-the-badge&logo=android" alt="Baixar APK do Amigo Tutu">
+  </a>
+</p>
+
+#### ⚠️ Aviso e Passos para Instalar
+Como este aplicativo ainda não está na Google Play Store, você precisará instalar o arquivo `.apk` manualmente.
+
+1.  Acesse o link acima e baixe o arquivo `AmigoTutu.apk` da seção "Assets".
+2.  Após o download, tente abrir o arquivo.
+3.  O Android exibirá uma mensagem de segurança. Clique em **"Configurações"** e autorize a instalação de aplicativos a partir do seu navegador ou gerenciador de arquivos.
+4.  Volte e prossiga com a instalação.
+
+## Demonstração Visual
+
+<table>
+  <tr>
+    <td align="center">Tela Inicial</td>
+    <td align="center">Tela de Necessidades</td>
+    <td align="center">Tela de Atividades</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/23878eee-40ef-40ff-ba9b-c6424f145680" alt="Tela Inicial do App" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/00e4c126-ee73-457b-a477-efed06a1aecc" alt="Tela de Necessidades do App" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/c5275cf3-7f22-4b70-898e-7a9529bb05c4" alt="Tela de Atividades do App" width="250"></td>
+  </tr>
+</table>
 
 ## Pilha de Tecnologias
 
@@ -53,9 +83,9 @@ O feedback contínuo da **Sorri Bauru** e de outros profissionais da área é fu
 * [ ] Implementação de voz sintetizada para "falar" as frases montadas.
 * [ ] Módulo de relatórios simples para acompanhamento de terapeutas e pais.
 
-## Autores
+## 👨‍💻 Autores
 
-**Lucas de Oliveira Pereira, Kevin Martins**
-
-* **LinkedIn:** `https://www.linkedin.com/in/lucas-de-oliveira-pereira-741936272/`
-* **GitHub:** `https://github.com/Olikeira`
+* **Lucas de Oliveira Pereira**
+    * LinkedIn: [`lucas-de-oliveira-pereira-741936272`](https://www.linkedin.com/in/lucas-de-oliveira-pereira-741936272/)
+    * GitHub: [`Olikeira`](https://github.com/Olikeira)
+* **Kevin Martins**
