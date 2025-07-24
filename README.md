@@ -83,7 +83,7 @@ O feedback contínuo da **Sorri Bauru** e de outros profissionais da área é fu
 * [ ] Implementação de voz sintetizada para "falar" as frases montadas.
 * [ ] Módulo de relatórios simples para acompanhamento de terapeutas e pais.
 
-## 👨‍💻 Autores
+## Autores
 
 * **Lucas de Oliveira Pereira**
     * LinkedIn: [`lucas-de-oliveira-pereira-741936272`](https://www.linkedin.com/in/lucas-de-oliveira-pereira-741936272/)
