@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_atividade">
+
+    <ImageView
+        android:id="@+id/barra_atividade"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar_atividade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageView
+        android:id="@+id/img_diversao_atividade"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catsubcat_atividade" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_atividade">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_musica"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_musica"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_musica" />
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_livro"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_livro"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_livro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_papel"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_papel"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_papel" />
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_desenhar"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_desenhar"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_desenhar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_colorir"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_colorir"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_colorir" />
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_lapis"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_lapis"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_lapis" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_regua"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_regua"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_regua" />
+
+                <ImageButton
+                    android:id="@+id/btn_atividade_tesoura"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_atividade_tesoura"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_atividade_tesoura" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

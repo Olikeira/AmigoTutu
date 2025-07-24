@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_contato">
+
+    <ImageView
+        android:id="@+id/barra_contato"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_fechar_contato"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnfechar" />
+
+    <ImageView
+        android:id="@+id/img_titulo_contato"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_contato" />
+
+    <ImageView
+        android:id="@+id/texto_contato"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_contato"
+        app:srcCompat="@drawable/texto_contato" />
+
+    <ImageButton
+        android:id="@+id/btn_sugestao"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_contato"
+        app:srcCompat="@drawable/btn_sugestao" />
+
+    <ImageButton
+        android:id="@+id/btn_erro"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sugestao"
+        app:srcCompat="@drawable/btn_erro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

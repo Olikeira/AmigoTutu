@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_numeros">
+
+    <ImageView
+        android:id="@+id/barra_numeros"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar_numeros"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageView
+        android:id="@+id/img_aprendizado_numeros"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catsubcat_numeros" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_numeros"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_0"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_0"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_0" />
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_1"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_1"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_2"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_2"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_2" />
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_3"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_3"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_4"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_4"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_4" />
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_5"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_5"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_6"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_6"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_6" />
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_7"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_7"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_8"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_8"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_8" />
+
+                <ImageButton
+                    android:id="@+id/btn_numeros_9"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_numeros_9"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_numeros_9" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

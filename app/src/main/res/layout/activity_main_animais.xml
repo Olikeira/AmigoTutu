@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_animais">
+
+    <ImageView
+        android:id="@+id/barra_animais"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar_animais"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageView
+        android:id="@+id/img_aprendizado_animais"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catsubcat_animais" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_animais">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_cachorro"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_cachorro"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_cachorro" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_gato"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_gato"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_gato" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_passaro"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_passaro"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_passaro" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_peixe"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_peixe"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_peixe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_cavalo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_cavalo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_cavalo" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_vaca"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_vaca"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_vaca" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_galinha"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_galinha"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_galinha" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_coelho"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_coelho"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_coelho" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_sapo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_sapo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_sapo" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_abelha"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_abelha"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_abelha" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_borboleta"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_borboleta"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_borboleta" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_formiga"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_formiga"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_formiga" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_urso"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_urso"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_urso" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_jacare"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_jacare"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_jacare" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_tartaruga"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_tartaruga"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_tartaruga" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_macaco"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_macaco"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_macaco" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_leao"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_leao"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_leao" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_zebra"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_zebra"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_zebra" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_girafa"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_girafa"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_girafa" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_elefante"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_elefante"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_elefante" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_animais_hipopotamo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_animais_hipopotamo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_animais_hipopotamo" />
+
+                <ImageButton
+                    android:id="@+id/btn_animais_vazio"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_vazio" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_acessomenu">
+
+    <ImageView
+        android:id="@+id/topo_acesso_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageView
+        android:id="@+id/legenda_menu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btn_acesso_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/legenda_acessar_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_acesso_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnacessar" />
+
+    <ImageView
+        android:id="@+id/img_logo_acessomenu"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topo_acesso_menu"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_acessomenu"
+        app:srcCompat="@drawable/btn_voltar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

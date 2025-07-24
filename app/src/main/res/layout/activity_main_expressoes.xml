@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_expressoes">
+
+    <ImageView
+        android:id="@+id/barra_expressoes"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar_expressoes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageView
+        android:id="@+id/img_emocoes_expressoes"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catsubcat_expressoes" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_expressoes">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_teamo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_teamo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_teamo" />
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_abraco"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_abraco"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_abraco" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_feliz"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_feliz"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_feliz" />
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_triste"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_triste"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_triste" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_bravo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_bravo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_bravo" />
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_assustado"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_assustado"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_assustado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_medo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_expressoes_medo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_expressoes_medo" />
+
+                <ImageButton
+                    android:id="@+id/btn_expressoes_vazio"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_vazio" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

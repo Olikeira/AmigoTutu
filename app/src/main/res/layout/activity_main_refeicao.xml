@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_refeicao">
+
+    <ImageView
+        android:id="@+id/barra_refeicao"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_voltar_refeicao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageView
+        android:id="@+id/img_alimentacao_refeicao"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catsubcat_refeicao" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_refeicao">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_arroz"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_arroz"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_arroz" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_feijao"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_feijao"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_feijao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_carne"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_carne"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_carne" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_frango"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_frango"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_frango" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_ovo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_ovo"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_ovo" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_batatafrita"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_batatafrita"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_batatafrita" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_macarrao"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_macarrao"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_macarrao" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_salsicha"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_salsicha"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_salsicha" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_pizza"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_pizza"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_pizza" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_lanche"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_lanche"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_lanche" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_pao"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_pao"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_pao" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_queijo"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_queijo"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_queijo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_pipoca"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="som_refeicao_pipoca"
+                    android:paddingLeft="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_refeicao_pipoca" />
+
+                <ImageButton
+                    android:id="@+id/btn_refeicao_vazio"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="30dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/btn_vazio" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

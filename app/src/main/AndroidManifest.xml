@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmigoTutu"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity_alfabeto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_numeros"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_cores"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_animais"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_atividade"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_brincar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_lugares"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_expressoes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_familia"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_roupas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_dor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_necessidades"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_saudacoes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_comentarios"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_pedidos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_doces"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_frutas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_bebidas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_refeicao"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_favoritos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_abertura"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_sobre"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_contato"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_custom"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_menu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity_acessomenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

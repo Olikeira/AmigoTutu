@@ -1,0 +1,3553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity_custom">
+
+    <ImageView
+        android:id="@+id/barra_custom"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_menu" />
+
+    <ImageButton
+        android:id="@+id/btn_fechar_custom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Fechar"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnfechar" />
+
+    <ImageView
+        android:id="@+id/img_titulo_personalizar"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_personalizar" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_custom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_refeicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REFEIÇÃO"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_arroz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Arroz"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider001"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_feijao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Feijão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider002"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_carne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Carne"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider003"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_frango"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Frango"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider004"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ovo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Ovo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider005"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_batatafrita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Batata Frita"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider006"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_macarrao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Macarrão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider007"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_salsicha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Salsicha"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider008"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pizza"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider009"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_lanche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Lanche"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider010"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider011"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_queijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Queijo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider012"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pipoca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pipoca"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider013"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="BEBIDAS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider014"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_agua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Água"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider015"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_suco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Suco"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider016"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_leite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Leite"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider017"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="FRUTAS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider018"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_banana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Banana"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider019"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_laranja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Laranja"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider020"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_morango"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Morango"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider021"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_uva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Uva"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider022"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_abacaxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Abacaxi"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider023"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_melancia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Melancia"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider024"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_maca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Maçã"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider025"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_mamao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Mamão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider026"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_abacate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Abacate"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider027"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_melao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Melão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider028"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="DOCES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider029"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bolacha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bolacha"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider030"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_sorvete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Sorvete"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider031"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bolo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider032"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_chocolate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Chocolate"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider033"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="PEDIDOS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider034"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_mais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Mais"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider035"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_menos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Menos"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider036"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pare"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider037"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ajuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Ajuda"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider038"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_desculpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Desculpa"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider039"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="COMENTÁRIOS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider040"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Sim"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider041"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_nao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Não"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider042"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_gostodisso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Gosto disso"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider043"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_naogostodisso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Não gosto disso"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider044"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_obrigado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Obrigado"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider045"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="SAUDAÇÕES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider046"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bomdia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bom dia"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider047"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_boanoite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Boa noite"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider048"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Olá"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider049"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tchau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tchau"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider050"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tudobem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tudo bem?"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider051"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="NECESSIDADES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider052"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_xixi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Xixi"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider053"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_coco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Cocô"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider054"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_lavarasmaos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Lavar as mãos"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider055"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_escovarosdentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Escovar os dentes"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider056"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tomarbanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tomar banho"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider057"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_sono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Sono"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider058"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_calor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Calor"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider059"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_frio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Frio"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider060"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="DOR"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider061"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cabeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Cabeça"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider062"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_barriga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Barriga"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider063"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_garganta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Garganta"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider064"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_dente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Dente"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider065"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_braco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Braço"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider066"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_mao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Mão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider067"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_perna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Perna"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider068"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_pe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pé"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider069"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ROUPAS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider070"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_camiseta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Camiseta"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider071"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_blusa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Blusa"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider072"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_calca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Calça"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider073"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bermuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bermuda"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider074"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vestido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Vestido"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider075"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_saia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Saia"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider076"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_calcinha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Calcinha"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider077"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cueca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Cueca"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider078"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_chinelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Chinelo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider079"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tênis"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider080"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_meia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Meia"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider081"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_luva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Luva"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider082"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Boné"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider083"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_chapeu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Chapéu"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider084"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="FAMÍLIA"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider085"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_papai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Papai"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider086"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_mamae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Mamãe"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider087"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vovoh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Vovô"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider088"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vovom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Vovó"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider089"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_irmao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Irmão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider090"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_irma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Irmã"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider091"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_familia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Família"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider092"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="EXPRESSÕES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider093"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_teamo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Te amo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider094"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_abraco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Abraço"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider095"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_feliz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Feliz"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider096"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_triste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Triste"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider097"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bravo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bravo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider098"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_assustado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Assustado"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider099"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_medo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Medo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider100"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="LUGARES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider101"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Casa"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider102"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_escola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Escola"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider103"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_banheiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Banheiro"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider104"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_igreja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Igreja"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider105"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_terapia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Terapia"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider106"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_parquinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Parquinho"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider107"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="BRINCAR"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider108"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_querbrincar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Quer brincar?"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider109"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bola"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider110"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Carrinho"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider111"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_boneca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Boneca"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider112"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bicicleta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Bicicleta"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider113"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_piscina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Piscina"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider114"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_televisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Televisão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider115"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ATIVIDADE"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider116"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_musica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Música"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider117"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_livro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Livro"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider118"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/papel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Papel"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider119"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_desenhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Desenhar"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider120"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_colorir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Colorir"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider121"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_lapis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Lápis"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider122"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_regua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Régua"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider123"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tesoura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tesoura"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider124"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ANIMAIS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider125"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cachorro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Cachorro"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider126"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_gato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Gato"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider127"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_passaro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Pássaro"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider128"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_peixe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Peixe"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider129"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cavalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Cavalo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider130"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Vaca"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider131"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_galinha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Galinha"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider132"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_coelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Coelho"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider133"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_sapo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Sapo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider134"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_abelha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Abelha"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider135"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_borboleta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Borboleta"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider136"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_formiga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Formiga"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider137"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_urso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Urso"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider138"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_jacare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Jacaré"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider139"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tartaruga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Tartaruga"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider140"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_macaco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Macaco"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider141"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_leao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Leão"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider142"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_zebra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Zebra"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider143"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_girafa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Girafa"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider144"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_elefante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Elefante"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider145"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_hipopotamo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Hipopótamo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider146"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="CORES"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider147"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_preto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Preto"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider148"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_branco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Branco"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider149"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_amarelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Amarelo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider150"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_verde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Verde"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider151"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_azul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Azul"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider152"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_vermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Vermelho"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider153"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_roxo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Roxo"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider154"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cor_laranja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Laranja"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider155"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="NÚMEROS"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider156"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 0 (Zero)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider157"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 1 (Um)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider158"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 2 (Dois)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider159"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 3 (Três)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider160"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 4 (Quatro)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider161"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 5 (Cinco)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider162"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 6 (Seis)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider163"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 7 (Sete)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider164"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 8 (Oito)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider165"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" 9 (Nove)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider166"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ALFABETO"
+                android:textColor="#1E5464"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider167"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" A"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider168"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" B"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider169"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" C"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider170"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" D"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider171"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" E"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider172"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" F"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider173"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" G"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider174"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" H"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider175"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" I"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider176"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" J"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider177"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" K"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider178"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" L"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider179"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" M"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider180"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" N"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider181"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" O"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider182"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" P"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider183"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Q"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider184"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" R"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider185"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" S"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider186"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" T"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider187"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_u"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" U"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider188"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" V"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider189"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" W"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider190"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" X"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider191"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Y"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider192"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/checkbox_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=" Z"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#1E5464"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/divider193"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_salvar"
+            android:layout_width="150dp"
+            android:layout_height="77dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Salvar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_salvar" />
+
+        <ImageButton
+            android:id="@+id/btn_cancelar"
+            android:layout_width="150dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Cancelar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_cancelar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
